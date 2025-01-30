@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>EasyShopee</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <div class="brand-logo">
+                    <img width="75px" src="./assets/logo.png" alt="Brand logo">
+                </div>
+                <div class="slogan">
+                    <a href="/EcommApp-Task-2">EasyShopee</a>
+                    <span>Buy, What's You like</span>
+                </div>
+            </div>
+            <div id="menu-line" class="menu-line">
+                <span><i class='bx bx-menu'></i></span>
+            </div>
+            <div id="menu-items" class="menu-items">
+                <div class="nav-search">
+                    <input type="search" name="search" id="search" placeholder="Seach in EasyShopee"
+                        aria-autocomplete="none">
+                    <button onclick="menuClose()" class="btn-search"><span><i
+                                class='bx bx-search-alt-2'></i></span>Search</button>
+                </div>
+                <div class="user-menu-group">
+                    <a href=""><span><i class='bx bx-user-check'></i></span>Login </a>
+                    <a href=""><span><i class='bx bx-user-plus'></i></span>Sign Up </a>
+                    <a href=""><span><i class='bx bx-shopping-bag'></i>(1)</span>Cart </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="filter-container">
+            <h3>Category</h3>
+            <div class="catogety-list"></div>
+
+        </div>
+        <div class="item-container">
+            <span class="Products">Products</span>
+            <div class="productItems"></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
